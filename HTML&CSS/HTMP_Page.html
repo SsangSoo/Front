@@ -8,1181 +8,1365 @@
     <title>브라우저 탭에 표시됩니다.</title>
 </head>
 
-<t>
-    <p>&lt;head&gt; 안에는 아래의 태그들이 담길 수 있고, 각 태그의 기능은 다음과 같습니다.</p>
-    <p>meta : 웹 페이지에 추가 정보를 전달합니다.</p>
-    <p>title : 웹 페이지의 제목입니다.</p>
-    <p>script : 웹 페이지에 스크립트를 추가합니다.</p>
-    <p>link : 웹 페이지의 다른 파일을 추가합니다.</p>
-    <p>style : 웹 페이지의 스타일시트를 추가합니다.</p>
-    <p>base : 웹 페이지의 기본 경로를 지정합니다.</p>
+<body>
+    <t>
+        <p>&lt;head&gt; 안에는 아래의 태그들이 담길 수 있고, 각 태그의 기능은 다음과 같습니다.</p>
+        <p>meta : 웹 페이지에 추가 정보를 전달합니다.</p>
+        <p>title : 웹 페이지의 제목입니다.</p>
+        <p>script : 웹 페이지에 스크립트를 추가합니다.</p>
+        <p>link : 웹 페이지의 다른 파일을 추가합니다.</p>
+        <p>style : 웹 페이지의 스타일시트를 추가합니다.</p>
+        <p>base : 웹 페이지의 기본 경로를 지정합니다.</p>
+
+        <article>
+            <h1>제목 1</h1>
+            <h1 title="header">h1 내부에 title 속성에 header를 줘보기</h1>
+            <h3>일반적으로 웹 페이지를 만들 때는 h1~h3까지 사용합니다.</h3>
+            <p>&lt;p&gt; => 글자 본문 태그입니다. p는 단락을 의미하는 paragraph의 줄임말로써 사용하면 하나의 단락을 만들 수 있습니다.</p>
+
+            <h4>vsCode의 Go live 단축키는 다음과 같습니다. : Alt + L + O</h4>
+            <p>vsCode에서 "Lorem"을 입력하면, 다음과 같은 더미(?) 데이터가 나옵니다.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dolor aspernatur praesentium beatae
+                tenetur
+                expedita ea nihil accusantium! Mollitia facilis voluptatem ducimus sequi voluptate quaerat tenetur
+                assumenda, earum numquam quod!</p>
+        </article>
 
-    <article>
-        <h1>제목 1</h1>
-        <h1 title="header">h1 내부에 title 속성에 header를 줘보기</h1>
-        <h3>일반적으로 웹 페이지를 만들 때는 h1~h3까지 사용합니다.</h3>
-        <p>&lt;p&gt; => 글자 본문 태그입니다. p는 단락을 의미하는 paragraph의 줄임말로써 사용하면 하나의 단락을 만들 수 있습니다.</p>
-
-        <h4>vsCode의 Go live 단축키는 다음과 같습니다. : Alt + L + O</h4>
-        <p>vsCode에서 "Lorem"을 입력하면, 다음과 같은 더미(?) 데이터가 나옵니다.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dolor aspernatur praesentium beatae tenetur
-            expedita ea nihil accusantium! Mollitia facilis voluptatem ducimus sequi voluptate quaerat tenetur
-            assumenda, earum numquam quod!</p>
-    </article>
-
-    <br />
-    <hr />
-    &lt;br/&gt; 혹은 &lt;br&gt; : 줄바꿈<br />
-
-    <hr />
-    &lt;hr/&gt; 혹은 &lt;hr&gt; : 수평줄
-    <hr />
-    <h4>&lt;!-- 주석 --&gt;</h4>
-
-    <br /><br /><br /><br /><br />
-
-    <p>
-    <h4>a태그</h4>
-    &lt;a&gt; : 앵커 태그 <br />
-    a 태그에 다음과 같은 속성을 주면, 이동할 수 있습니다.. <br />
-    href="url주소" <br />
-    예시 : &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;<br />
-    <hr />
-    만약 이동하지 않는 빈 링크를 만들고 싶다면, href속성에 "#"을 주면됩니.<br />
-    예시 : &lt;a href="#"&gt;빈 링크&lt;/a&gt;<br />
-    <hr />
-    페이지 내부로 이동할 수도 있습니다.<br />
-    이 때는 원하는 장소에 id 속성을 부여하면 되는데요. <br />
-    한번 아래로 내려갔다 옵시다. 태그를 다음과 같이 하면 됩니다.<br />
-    &lt;a href="#under"&gt;아래로 가기&lt;/a&gt; <br />
-    <a href="#under">아래로 가기</a>
-
-    <h4 id="up">위로 왔으면 여기입니다.</h4>
-    위로 다시 되돌아왔으면 여기가 보이는 게 맞습니다. <br />
-    이렇게 내부에서도 원하는 장소에 id를 붙이고, a태그의 href속성에 "#지정한id"로 값을 줌으로써 페이지 내부에서 이동할 수 있습니다.<br />
-    참고로 만약에 그럴 일은 없어야 하겠지만, id 속성이 중복되서 나온다면, 먼저 나오는 id로 이동합니다.
-
-
-    <br /><br /><br /><br /><br />
-    </p>
-
-    <p>
-    <h4>글자 형태</h4>
-    <b>&lt;b&gt;굵은 글자 태그입니다.lt;/b&gt;</b>
-    <hr />
-    <i>&lt;i&gt;기울어진 글자 태그입니다.&lt;/i&gt;</i>
-    <hr />
-    <small>&lt;small&gt;작은 글자 태그입니다.&lt;/small&gt;</small>
-    <hr />
-    <sub>&lt;sub&gt;아래에 달라 붙는 글자 태그입니다.&lt;/sub&gt;</sub>
-    <hr />
-    <sup>&lt;sup&gt;위에 달라 붙는 글자 태그입니다.&lt;/sup&gt;</sup>
-    <hr />
-    <ins>&lt;ins&gt;밑줄 글자 태그입니다.&lt;/ins&gt;</ins>
-    <hr />
-    <del>&lt;del&gt;가운데 줄이 그어진 글자 태그입니다.&lt;/del&gt;</del>
-    <hr /><br /><br />
-    </p>
-
-    <p>
-    <h4>루비 문자</h4>
-    글자 위에 글자를 표시하는 태그입니다. <br />
-    다음과 같이 사용할 수 있습니다.<br />
-
-    <hr />
-    &lt;ruby&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;大韓民國&lt;/span&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;rt&gt;대한민국&lt;/rt&gt;<br />
-    &lt;/ruby&gt; <br />
-    <hr />
-    결과는 아래와 같습니다. <br />
-
-    <ruby>
-        <span>大韓民國</span>
-        <rt>대한민국</rt>
-    </ruby>
-
-    <br />
-    만약 루비 태그를 지원하지 않는다면, 다음과 같이 하면됩니다.<br />
-    <hr />
-    &lt;ruby&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;大韓民國&lt;/span&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;rp&gt;(&lt;/rp&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;rt&gt;대한민국&lt;/rt&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;rp&gt;)&lt;/rp&gt;<br />
-    &lt;/ruby&gt; <br />
-    <hr />
-    결과는 아래와 같습니다. <br />
-
-    <ruby>
-        <span>大韓民國</span>
-        <rp>(</rp>
-        <rt>대한민국</rt>
-        <rp>)</rp>
-    </ruby>
-
-    <br />
-    </p>
-
-    <br /><br /><br /><br /><br />
-
-    <p>
-    <h3><b>목록 태그</b></h3>
-    <hr />
-    목록태그와 해당 태그에 대한 설명은 다음과 같습니다. <br />
-    <hr />
-    <b>ui</b> : 순서가 없는 목록 태그입니다.<br />
-    <b>ol</b> : 순서가 있는 목록 태그입니다.<br />
-    <b>li</b> : 목록 요소 태그입니다.<br />
-    <hr />
-    차이점을 한번 살펴봅시다.
-
-    <h4>ol 태그</h4>
-    <ol>
-        <li>Facebook</li>
-        <li>Tweeter</li>
-        <li>Linked in</li>
-    </ol>
-
-    <h4>ul 태그</h4>
-    <ul>
-        <li>Facebook</li>
-        <li>Tweeter</li>
-        <li>Linked in</li>
-    </ul>
-
-    글머리에 숫자가 붙는지 기호가 붙는지에 대한 차이가 있습니다. <br /><br />
-
-    <h4>중첩 목록</h4>
-    중첩 목록도 가능한데요, 글머리 기호가 있는 것과 글머리에 숫자가 붙는 리스트를 조합할 수도 있습니다.
-    <ul>
-        <li>순서가 있음
-            <ol>
-                <li>Multimedia Tag</li>
-                <li>Connectivity Tag</li>
-                <li>Device Tag</li>
-            </ol>
-        </li>
-        <li>순서가 없음
-            <ul>
-                <li>Animation</li>
-                <li>3D Transform</li>
-            </ul>
-        </li>
-    </ul>
-
-    <hr />
-    반대로 순서가 있는 목록에서 중첩목록도 한번 살펴보겠습니다.
-
-    <ol>
-        <li>순서가 없음
-            <ul>
-                <li>Animation</li>
-                <li>3D Transform</li>
-            </ul>
-        </li>
-        <li>순서가 있음
-            <ol>
-                <li>Multimedia Tag</li>
-                <li>Connectivity Tag</li>
-                <li>Device Tag</li>
-            </ol>
-        </li>
-    </ol>
-
-    <h4>정의 목록</h4>
-    특정 용어와 그 정의를 표현할 때 사용하는 태그입니다.
-    <br /><br />
-    각 태그에 대한 이름과 설명을 살펴보겠습니다.
-
-    <ol><b>정의 목록 태그</b>
-        <li>dl : 정의 목록 태그입니다.</li>
-        <li>dt : 정의 용어 태그입니다.</li>
-        <li>dd : 정의 설명 태그입니다.</li>
-    </ol>
-
-    <br />
-    예시는 다음과 같습니다.
-    <hr />
-
-    &lt;dl&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;HTML5&lt;/dt&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Multimedia Tag&lt;/dd&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Connectivity&lt;/dd&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Device Access&lt;/dd&gt;<br />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Milk&lt;/dt&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Animation&lt;/dd&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;3D Transform&lt;/dd&gt;<br />
-    &lt;/dl&gt;
-
-    <br /><br />
-    결과는 아래에서 확인할 수 있습니다.
-    <hr />
-
-    <dl>
-        <dt>HTML5</dt>
-        <dd>Multimedia Tag</dd>
-        <dd>Connectivity</dd>
-        <dd>Device Access</dd>
-
-        <dt>Milk</dt>
-        <dd>Animation</dd>
-        <dd>3D Transform</dd>
-    </dl>
-
-    </p>
-
-    <br />
-    <hr />
-    <br />
-
-    <p>
-    <h4>테이블 태그</h4>
-    테이블 태그는 HTML 페이지에서 표를 만들 때 사용하는 태그입니다.<br />
-    하지만, 현재 div 태그를 사용하면서 사용빈도가 굉장히 줄었지만, 알아보도록 하겠습니다. <br />
-    다음과 같이 사용합니다.<br /><br />
-    <hr />
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;<br /><br />
-
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/table&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br /><br />
-    <hr />
-    table 태그안에 들어갈 수 있는 요소는 많습니다만, <br />
-    실제로 많이 쓰이는 태그는 다음과 같습니다. <br />
-
-    <ol><b>테이블 요소 태그</b>
-        <li>tr : 표 내부의 행 태그입니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp; table row를 의미합니다. </li>
-        <li>th : 행 내부의 제목 셀 태그입니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp; table header를 의미합니다.</li>
-        <li>td : 행 내부의 일반 셀 태그입니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp; table data를 의미합니다.</li>
-    </ol>
-
-    <hr />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table border="1"&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header
-    1&lt;/th&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header
-    2&lt;/th&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr/&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
-    1&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
-    1&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
-    2&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
-    2&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
-
-    <br />
-    <hr />
-    <br />
-    <b>결과는 아래와 같습니다.</b>
-
-    <table border="1">
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 1</td>
-        </tr>
-        <tr>
-            <td>Data 2</td>
-            <td>Data 2</td>
-        </tr>
-    </table>
-
-    <br />
-
-    그리고 위 HTML 코드에서 보신 바와 같이 table 태그에서 속성을 설정할 수도 있습니다.<br />
-    위에는 <b>border</b> 속성이 있는데, <b>border</b> 속성은 <b>표의 테두리 두께를 지정</b>합니다.
-
-    <br /><br />
-
-    th 태그와 td 태그에도 속성을 지정할 수 있는데, 다음 속성을 지정할 수 있습니다.
-
-    <ol><b>td와 th 요소 태그</b>
-        <li>rowspan : 셀의 높이를 지정합니다. </li>
-        <li>colspan : 셀의 너비를 지정합니다. </li>
-    </ol>
-
-    <br />
-    <hr />
-    <br />
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table border="1"&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th
-    colspan="3"&gt;Table Data&lt;/th&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th
-    rowspan="3"&gt;Table Data&lt;/th&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
-    Data&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td
-    rowspan="2"&gt;Table Data&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
-    Data&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
-    Data&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
-    Data&lt;/td&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br /><br />
-
-
-
-    <hr />
-    <br />
-    결과는 다음과 같습니다!<br />
-
-    <br />
-
-    <hr />
-    <br />
-
-    <table border="1">
-        <tr>
-            <th colspan="3">Table Data</th>
-            <th rowspan="3">Table Data</th>
-        </tr>
-
-        <tr>
-            <td>Table Data</td>
-            <td rowspan="2">Table Data</td>
-            <td>Table Data</td>
-        </tr>
-
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-    </table>
-    </p>
-
-    <br /><br /><br /><br /><br />
-
-    <p>
-    <h4><b>이미지 태그</b></h4>
-    HTML은 <b>img</b> 태그를 사용해서 이미지를 넣습니다.<br />
-
-    다음과 같이 태그를 사용합니다. <br />
-    &lt;img /&gt;
-
-    어떠한 이미지를 사용할지는 img 태그 속성을 사용해 표시합니다.<br />
-    하지만, 아래의 속성들을 가장 많이 사용합니다.<br />
-
-    <br />
-    <hr /><br />
-
-
-    <ol><b>img 태그의 속성</b>
-        <li>src : 이미지의 경로를 지정합니다. </li>
-        <li>alt : 이미지가 없을 때 나오는 글자를 지정합니다. </li>
-        <li>width : 이미지의 너비를 지정합니다. </li>
-        <li>height : 이미지의 높이를 지정합니다. </li>
-    </ol>
-
-    <br />
-    <hr /><br />
-
-    다음과 같이 사용할 수 있습니다.<br>
-    두 번째는 일부러 존재하지 않는 이미지 경로를 입력했습니다.<br>
-    <br>
-
-    <hr />
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="hahahaha.jpg" alt="루피하하하하" width="300"/&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Nothing" alt="그림이 없습니다." width="300"/&gt;
-
-    <br />
-    <hr />
-    <br />
-
-    <b>결과는 아래와 같습니다.</b><br />
-
-    <img src="hahahaha.jpg" alt="루피하하하하" width="300" />
-    <img src="Nothing" alt="그림이 없습니다." width="300" />
-
-    <br /><br />
-    </p>
-
-    <br /><br /><br /><br /><br />
-
-    <p>
-    <h4><b>오디오 태그</b></h4>
-    오디오 태그는 웹 브라우저에서 플러그인의 도움없이 음악을 재생할 수 있게 만들어주는 HTML5 태그입니다.<br />
-    HTML5에 추가된 기능으로써, 인터넷 익스플로러 8 이하에서는 사용할 수 없습니다.<br />
-    <br />
-    사용 방법은 img 태그와 굉장히 유사합니다.
-
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;audio&gt;&lt;/audio&gt;
-    <br />
-
-    현재 태그는 무슨 음악을 어떠한 방식으로 재생할지 정해주지 않았습니다.
-    <br />속성을 활용하면 되는데, 중요한 속성들은 다음과 같습니다.
-    <br />
-    <br />
-    <hr />
-    <br />
-    <ol id="propertyAudio"><b>audio 태그의 속성</b>
-        <li>src : 음악 파일의 경로를 지정합니다. </li>
-        <li>preload : 음악을 재생하기 전에 모두 불러올지를 지정합니다. </li>
-        <li>autoplay : 음악을 자동 재생할지 지정합니다. </li>
-        <li>loop : 음악을 반복할지 지정합니다. </li>
-        <li>controls : 음악 재생 도구를 출력할지 지정합니다. </li>
-    </ol>
-    <br />
-    <hr />
-    <br />
-    위의 속성들을 가지고, 음악을 재생해보도록 하겠습니다!<br />
-    &lt;audio src="001.mp3" controls="controls"&gt;&lt;/audio&gt; <br>
-
-    <br />
-    결과는 다음과 같습니다.
-    <br />
-    <audio src="Kalimba.mp3" controls="controls"></audio>
-
-
-    <br />
-
-    반면에, 다음과 같이 audio 태그에서 controls 속성이 없으면, 다음과 같이 나옵니다. <br />
-    &lt;audio src="001.mp3" &gt;&lt;/audio&gt;<br />
-    <audio src="001.mp3"></audio>
-    <br />
-    <img src="no_skill.png" /> 이 글 왼쪽으로 드래그 해보시면, 왼쪽에 사진이 있음을 확인할 수 있습니다.<br />
-    혹은 페이지 소스 확인하기를 통해서 확인하실 수 있습니다.<br />
-
-    </p>
-
-    <p>
-    <h4>source태그</h4>
-    웹 브라우저 미세 버전에 따라서 audio 태그가 실행되거나, 실행되지 않을 수 있습니다.<br />
-    미세 버전에 따라 실행되지 않는 문제를 해결하고자 만들어진 태그가 바로 <b>source 태그</b>입니다.<br />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;audio controls="controls"&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Kalimba.mp3" type="audio/mp3" /&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Kalimba.ogg" type="audio/ogg" /&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/audio&gt;<br />
-    <br />
-
-    결과는 다음과 같습니다.<br />
-    <br />
-    <audio controls="controls">
-        <source src="Kalimba.mp3" type="audio/mp3" />
-        <source src="Kalimba.ogg" type="audio/ogg" />
-    </audio>
-    <br />
-    OGG파일과 mp3파일을 사용하면 모든 브라우저에서 음악을 재생할 수 있습니다!<br />
-    참고로 type 속성은 입력하지 않아도 되지만, type 속성을 입력하지 않으면, <br />
-    웹 브라우저가 음악 파일을 내려받은 뒤 재생 가능한 파일인지 확인하므로, 트래픽이 낭비되기 때문에, 적어주는 것이 좋습니다.<br />
-
-    </p>
-
-    <p>
-    <h4>비디오 태그</h4>
-    비디오 태그는 웹 페이지에서 동영상을 볼 수 있게 만들어줍니다.<br />
-    HTML5 시대가 오면서 웹 표준만으로 동영상을 볼 수 있게 된 것입니다.<br />
-    &lt;참고&gt;윈도우에 기본으로 내장되어 있는 동영상 파일은 <b>WMV</b> 형식인데, 웹 브라우저에서는 WMV 형식을 지원하지 않습니다.
-
-    video 태그의 속성은 다음과 같습니다.
-    <br /><br />
-
-    <table id="propertyVideo" border="1">
-        <tr>
-            <th border="1">속성 이름</th>
-            <th border="1">설명</th>
-        </tr>
-        <tr>
-            <td>src</td>
-            <td>비디오 파일의 경로 지정</td>
-        </tr>
-        <tr>
-            <td>poster</td>
-            <td>비디오 준비 중일 때의 이미지 파일 경로 지정</td>
-        </tr>
-        <tr>
-            <td>preload</td>
-            <td>비디오를 재생하기 전에 모두 불러올지 지정</td>
-        </tr>
-        <tr>
-            <td>autoplay</td>
-            <td>비디오를 자동 재생할지 지정</td>
-        </tr>
-        <tr>
-            <td>loop</td>
-            <td>비디오를 반복할지 지정</td>
-        </tr>
-        <tr>
-            <td>controls</td>
-            <td>비디오 재생 도구를 출력할지 지정</td>
-        </tr>
-        <tr>
-            <td>width</td>
-            <td>비디오의 너비 지정</td>
-        </tr>
-        <tr>
-            <td>height</td>
-            <td>비디오의 높이 지정</td>
-        </tr>
-    </table>
-
-    <br />
-    video 태그도 audio 태그처럼 웹 브라우저마다 지원하는 비디오 형식이 다르므로, source 태그를 사용해야 하는데요.<br />
-    기본적으로 MP4 형식으로 사용하면 됩니다. <br />
-    <br />
-    다음과 같이 사용하면 됩니다.<br />
-
-    <br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;video controls="controls"&gt; <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Wildlife.mp4"
-    type="video/mp4" /&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Wildlife.webm"
-    type="video/webm" /&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/video&gt;<br />
-    <br />
-    <br />
-    결과는 다음과 같습니다!
-    <br /><br />
-    <video controls="controls">
-        <source src="Wildlife.mp4" type="video/mp4" />
-        <source src="Wildlife.webm" type="video/webm" />
-    </video>
-    <br /><br />
-    그리고 위의 <a href="#propertyVideo">video 태그의 속성</a>에서는 <a href="#propertyAudio">audio태그의 속성</a>에는 없던 <b>poster</b>속성이
-    있는데, <br />
-    poster 태그는 동영상이 대기 상태일 때 표시할 이미지를 의미합니다.
-
-    <br /><br />
-    다음과 같이 사용할 수 있습니다.<br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;video poster="hahahaha.jpg"<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="640"
-    height="360" controls="controls"&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source
-    src="Wildlife.mp4" type="video/mp4" /&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source
-    src="Wildlife.webm" type="video/webm" /&gt;<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/video&gt;<br />
-
-    <br /><br />
-    결과는 다음과 같습니다!<br />
-    <br />
-    <video poster="hahahaha.jpg" width="640" height="360" controls="controls">
-        <source src="Wildlife.mp4" type="video/mp4" />
-        <source src="Wildlife.webm" type="video/webm" />
-    </video>
-    <br /><br />
-
-    </p>
-
-
-    <>
-        <h3><b>입력 양식 태그</b></h3>
-        입력양식은 사용자에게 입력받는 공간을 의미합니다.<br />
-        입력 양식 태그는 입력 양식을 만들 때 사용하는 태그입니다. <br /><br />
-
-        입력 양식은 <b>form태그</b>를 사용해 생성합니다.
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt; <br />
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt; <br />
+        <hr />
+        &lt;br/&gt; 혹은 &lt;br&gt; : 줄바꿈<br />
+
+        <hr />
+        &lt;hr/&gt; 혹은 &lt;hr&gt; : 수평줄
+        <hr />
+        <h4>&lt;!-- 주석 --&gt;</h4>
+
+        <br /><br /><br /><br /><br />
+
+        <p>
+        <h4>a태그</h4>
+        &lt;a&gt; : 앵커 태그 <br />
+        a 태그에 다음과 같은 속성을 주면, 이동할 수 있습니다.. <br />
+        href="url주소" <br />
+        예시 : &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;<br />
+        <hr />
+        만약 이동하지 않는 빈 링크를 만들고 싶다면, href속성에 "#"을 주면됩니.<br />
+        예시 : &lt;a href="#"&gt;빈 링크&lt;/a&gt;<br />
+        <hr />
+        페이지 내부로 이동할 수도 있습니다.<br />
+        이 때는 원하는 장소에 id 속성을 부여하면 되는데요. <br />
+        한번 아래로 내려갔다 옵시다. 태그를 다음과 같이 하면 됩니다.<br />
+        &lt;a href="#under"&gt;아래로 가기&lt;/a&gt; <br />
+        <a href="#under">아래로 가기</a>
+
+        <h4 id="up">위로 왔으면 여기입니다.</h4>
+        위로 다시 되돌아왔으면 여기가 보이는 게 맞습니다. <br />
+        이렇게 내부에서도 원하는 장소에 id를 붙이고, a태그의 href속성에 "#지정한id"로 값을 줌으로써 페이지 내부에서 이동할 수 있습니다.<br />
+        참고로 만약에 그럴 일은 없어야 하겠지만, id 속성이 중복되서 나온다면, 먼저 나오는 id로 이동합니다.
+
+
+        <br /><br /><br /><br /><br />
+        </p>
+
+        <p>
+        <h4>글자 형태</h4>
+        <b>&lt;b&gt;굵은 글자 태그입니다.lt;/b&gt;</b>
+        <hr />
+        <i>&lt;i&gt;기울어진 글자 태그입니다.&lt;/i&gt;</i>
+        <hr />
+        <small>&lt;small&gt;작은 글자 태그입니다.&lt;/small&gt;</small>
+        <hr />
+        <sub>&lt;sub&gt;아래에 달라 붙는 글자 태그입니다.&lt;/sub&gt;</sub>
+        <hr />
+        <sup>&lt;sup&gt;위에 달라 붙는 글자 태그입니다.&lt;/sup&gt;</sup>
+        <hr />
+        <ins>&lt;ins&gt;밑줄 글자 태그입니다.&lt;/ins&gt;</ins>
+        <hr />
+        <del>&lt;del&gt;가운데 줄이 그어진 글자 태그입니다.&lt;/del&gt;</del>
+        <hr /><br /><br />
+        </p>
+
+        <p>
+        <h4>루비 문자</h4>
+        글자 위에 글자를 표시하는 태그입니다. <br />
+        다음과 같이 사용할 수 있습니다.<br />
+
+        <hr />
+        &lt;ruby&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;大韓民國&lt;/span&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;rt&gt;대한민국&lt;/rt&gt;<br />
+        &lt;/ruby&gt; <br />
+        <hr />
+        결과는 아래와 같습니다. <br />
+
+        <ruby>
+            <span>大韓民國</span>
+            <rt>대한민국</rt>
+        </ruby>
+
+        <br />
+        만약 루비 태그를 지원하지 않는다면, 다음과 같이 하면됩니다.<br />
+        <hr />
+        &lt;ruby&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;大韓民國&lt;/span&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;rp&gt;(&lt;/rp&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;rt&gt;대한민국&lt;/rt&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;rp&gt;)&lt;/rp&gt;<br />
+        &lt;/ruby&gt; <br />
+        <hr />
+        결과는 아래와 같습니다. <br />
+
+        <ruby>
+            <span>大韓民國</span>
+            <rp>(</rp>
+            <rt>대한민국</rt>
+            <rp>)</rp>
+        </ruby>
+
+        <br />
+        </p>
+
+        <br /><br /><br /><br /><br />
+
+        <p>
+        <h3><b>목록 태그</b></h3>
+        <hr />
+        목록태그와 해당 태그에 대한 설명은 다음과 같습니다. <br />
+        <hr />
+        <b>ui</b> : 순서가 없는 목록 태그입니다.<br />
+        <b>ol</b> : 순서가 있는 목록 태그입니다.<br />
+        <b>li</b> : 목록 요소 태그입니다.<br />
+        <hr />
+        차이점을 한번 살펴봅시다.
+
+        <h4>ol 태그</h4>
+        <ol>
+            <li>Facebook</li>
+            <li>Tweeter</li>
+            <li>Linked in</li>
+        </ol>
+
+        <h4>ul 태그</h4>
+        <ul>
+            <li>Facebook</li>
+            <li>Tweeter</li>
+            <li>Linked in</li>
+        </ul>
+
+        글머리에 숫자가 붙는지 기호가 붙는지에 대한 차이가 있습니다. <br /><br />
+
+        <h4>중첩 목록</h4>
+        중첩 목록도 가능한데요, 글머리 기호가 있는 것과 글머리에 숫자가 붙는 리스트를 조합할 수도 있습니다.
+        <ul>
+            <li>순서가 있음
+                <ol>
+                    <li>Multimedia Tag</li>
+                    <li>Connectivity Tag</li>
+                    <li>Device Tag</li>
+                </ol>
+            </li>
+            <li>순서가 없음
+                <ul>
+                    <li>Animation</li>
+                    <li>3D Transform</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr />
+        반대로 순서가 있는 목록에서 중첩목록도 한번 살펴보겠습니다.
+
+        <ol>
+            <li>순서가 없음
+                <ul>
+                    <li>Animation</li>
+                    <li>3D Transform</li>
+                </ul>
+            </li>
+            <li>순서가 있음
+                <ol>
+                    <li>Multimedia Tag</li>
+                    <li>Connectivity Tag</li>
+                    <li>Device Tag</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h4>정의 목록</h4>
+        특정 용어와 그 정의를 표현할 때 사용하는 태그입니다.
+        <br /><br />
+        각 태그에 대한 이름과 설명을 살펴보겠습니다.
+
+        <ol><b>정의 목록 태그</b>
+            <li>dl : 정의 목록 태그입니다.</li>
+            <li>dt : 정의 용어 태그입니다.</li>
+            <li>dd : 정의 설명 태그입니다.</li>
+        </ol>
+
+        <br />
+        예시는 다음과 같습니다.
+        <hr />
+
+        &lt;dl&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;HTML5&lt;/dt&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Multimedia Tag&lt;/dd&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Connectivity&lt;/dd&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Device Access&lt;/dd&gt;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Milk&lt;/dt&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Animation&lt;/dd&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;3D Transform&lt;/dd&gt;<br />
+        &lt;/dl&gt;
 
         <br /><br />
+        결과는 아래에서 확인할 수 있습니다.
+        <hr />
 
-        입력 양식 안에는 다음과 같이 input 태그를 입력합니다.<br /><br />
+        <dl>
+            <dt>HTML5</dt>
+            <dd>Multimedia Tag</dd>
+            <dd>Connectivity</dd>
+            <dd>Device Access</dd>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt; <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search"/&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt; <br />
-        <br /><br />
+            <dt>Milk</dt>
+            <dd>Animation</dd>
+            <dd>3D Transform</dd>
+        </dl>
 
-        결과는 아래와 같은 형태로 입력 양식이 생성됩니다.
+        </p>
+
+        <br />
+        <hr />
         <br />
 
-        <form>
-            <input type="text" name="search" />
-            <input type="submit" />
-        </form>
+        <p>
+        <h4>테이블 태그</h4>
+        테이블 태그는 HTML 페이지에서 표를 만들 때 사용하는 태그입니다.<br />
+        하지만, 현재 div 태그를 사용하면서 사용빈도가 굉장히 줄었지만, 알아보도록 하겠습니다. <br />
+        다음과 같이 사용합니다.<br /><br />
+        <hr />
 
-        <br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;<br /><br />
 
 
-        <h4>form 태그의 속성</h4>
-        form 태그의 속성은 다음과 같습니다.<br /><br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/table&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br /><br />
+        <hr />
+        table 태그안에 들어갈 수 있는 요소는 많습니다만, <br />
+        실제로 많이 쓰이는 태그는 다음과 같습니다. <br />
+
+        <ol><b>테이블 요소 태그</b>
+            <li>tr : 표 내부의 행 태그입니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp; table row를 의미합니다. </li>
+            <li>th : 행 내부의 제목 셀 태그입니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp; table header를 의미합니다.</li>
+            <li>td : 행 내부의 일반 셀 태그입니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp; table data를 의미합니다.</li>
+        </ol>
+
+        <hr />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table border="1"&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header
+        1&lt;/th&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header
+        2&lt;/th&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr/&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
+        1&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
+        1&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
+        2&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data
+        2&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
+
+        <br />
+        <hr />
+        <br />
+        <b>결과는 아래와 같습니다.</b>
 
         <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 1</td>
+            </tr>
+            <tr>
+                <td>Data 2</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+
+        <br />
+
+        그리고 위 HTML 코드에서 보신 바와 같이 table 태그에서 속성을 설정할 수도 있습니다.<br />
+        위에는 <b>border</b> 속성이 있는데, <b>border</b> 속성은 <b>표의 테두리 두께를 지정</b>합니다.
+
+        <br /><br />
+
+        th 태그와 td 태그에도 속성을 지정할 수 있는데, 다음 속성을 지정할 수 있습니다.
+
+        <ol><b>td와 th 요소 태그</b>
+            <li>rowspan : 셀의 높이를 지정합니다. </li>
+            <li>colspan : 셀의 너비를 지정합니다. </li>
+        </ol>
+
+        <br />
+        <hr />
+        <br />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table border="1"&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th
+        colspan="3"&gt;Table Data&lt;/th&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th
+        rowspan="3"&gt;Table Data&lt;/th&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
+        Data&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td
+        rowspan="2"&gt;Table Data&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
+        Data&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
+        Data&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table
+        Data&lt;/td&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br /><br />
+
+
+
+        <hr />
+        <br />
+        결과는 다음과 같습니다!<br />
+
+        <br />
+
+        <hr />
+        <br />
+
+        <table border="1">
+            <tr>
+                <th colspan="3">Table Data</th>
+                <th rowspan="3">Table Data</th>
+            </tr>
+
+            <tr>
+                <td>Table Data</td>
+                <td rowspan="2">Table Data</td>
+                <td>Table Data</td>
+            </tr>
+
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+        </p>
+
+        <br /><br /><br /><br /><br />
+
+        <p>
+        <h4><b>이미지 태그</b></h4>
+        HTML은 <b>img</b> 태그를 사용해서 이미지를 넣습니다.<br />
+
+        다음과 같이 태그를 사용합니다. <br />
+        &lt;img /&gt;
+
+        어떠한 이미지를 사용할지는 img 태그 속성을 사용해 표시합니다.<br />
+        하지만, 아래의 속성들을 가장 많이 사용합니다.<br />
+
+        <br />
+        <hr /><br />
+
+
+        <ol><b>img 태그의 속성</b>
+            <li>src : 이미지의 경로를 지정합니다. </li>
+            <li>alt : 이미지가 없을 때 나오는 글자를 지정합니다. </li>
+            <li>width : 이미지의 너비를 지정합니다. </li>
+            <li>height : 이미지의 높이를 지정합니다. </li>
+        </ol>
+
+        <br />
+        <hr /><br />
+
+        다음과 같이 사용할 수 있습니다.<br>
+        두 번째는 일부러 존재하지 않는 이미지 경로를 입력했습니다.<br>
+        <br>
+
+        <hr />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="hahahaha.jpg" alt="루피하하하하" width="300"/&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Nothing" alt="그림이 없습니다." width="300"/&gt;
+
+        <br />
+        <hr />
+        <br />
+
+        <b>결과는 아래와 같습니다.</b><br />
+
+        <img src="hahahaha.jpg" alt="루피하하하하" width="300" />
+        <img src="Nothing" alt="그림이 없습니다." width="300" />
+
+        <br /><br />
+        </p>
+
+        <br /><br /><br /><br /><br />
+
+        <p>
+        <h4><b>오디오 태그</b></h4>
+        오디오 태그는 웹 브라우저에서 플러그인의 도움없이 음악을 재생할 수 있게 만들어주는 HTML5 태그입니다.<br />
+        HTML5에 추가된 기능으로써, 인터넷 익스플로러 8 이하에서는 사용할 수 없습니다.<br />
+        <br />
+        사용 방법은 img 태그와 굉장히 유사합니다.
+
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;audio&gt;&lt;/audio&gt;
+        <br />
+
+        현재 태그는 무슨 음악을 어떠한 방식으로 재생할지 정해주지 않았습니다.
+        <br />속성을 활용하면 되는데, 중요한 속성들은 다음과 같습니다.
+        <br />
+        <br />
+        <hr />
+        <br />
+        <ol id="propertyAudio"><b>audio 태그의 속성</b>
+            <li>src : 음악 파일의 경로를 지정합니다. </li>
+            <li>preload : 음악을 재생하기 전에 모두 불러올지를 지정합니다. </li>
+            <li>autoplay : 음악을 자동 재생할지 지정합니다. </li>
+            <li>loop : 음악을 반복할지 지정합니다. </li>
+            <li>controls : 음악 재생 도구를 출력할지 지정합니다. </li>
+        </ol>
+        <br />
+        <hr />
+        <br />
+        위의 속성들을 가지고, 음악을 재생해보도록 하겠습니다!<br />
+        &lt;audio src="001.mp3" controls="controls"&gt;&lt;/audio&gt; <br>
+
+        <br />
+        결과는 다음과 같습니다.
+        <br />
+        <audio src="Kalimba.mp3" controls="controls"></audio>
+
+
+        <br />
+
+        반면에, 다음과 같이 audio 태그에서 controls 속성이 없으면, 다음과 같이 나옵니다. <br />
+        &lt;audio src="001.mp3" &gt;&lt;/audio&gt;<br />
+        <audio src="001.mp3"></audio>
+        <br />
+        <img src="no_skill.png" /> 이 글 왼쪽으로 드래그 해보시면, 왼쪽에 사진이 있음을 확인할 수 있습니다.<br />
+        혹은 페이지 소스 확인하기를 통해서 확인하실 수 있습니다.<br />
+
+        </p>
+
+        <p>
+        <h4>source태그</h4>
+        웹 브라우저 미세 버전에 따라서 audio 태그가 실행되거나, 실행되지 않을 수 있습니다.<br />
+        미세 버전에 따라 실행되지 않는 문제를 해결하고자 만들어진 태그가 바로 <b>source 태그</b>입니다.<br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;audio controls="controls"&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Kalimba.mp3" type="audio/mp3" /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Kalimba.ogg" type="audio/ogg" /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/audio&gt;<br />
+        <br />
+
+        결과는 다음과 같습니다.<br />
+        <br />
+        <audio controls="controls">
+            <source src="Kalimba.mp3" type="audio/mp3" />
+            <source src="Kalimba.ogg" type="audio/ogg" />
+        </audio>
+        <br />
+        OGG파일과 mp3파일을 사용하면 모든 브라우저에서 음악을 재생할 수 있습니다!<br />
+        참고로 type 속성은 입력하지 않아도 되지만, type 속성을 입력하지 않으면, <br />
+        웹 브라우저가 음악 파일을 내려받은 뒤 재생 가능한 파일인지 확인하므로, 트래픽이 낭비되기 때문에, 적어주는 것이 좋습니다.<br />
+
+        </p>
+
+        <p>
+        <h4>비디오 태그</h4>
+        비디오 태그는 웹 페이지에서 동영상을 볼 수 있게 만들어줍니다.<br />
+        HTML5 시대가 오면서 웹 표준만으로 동영상을 볼 수 있게 된 것입니다.<br />
+        &lt;참고&gt;윈도우에 기본으로 내장되어 있는 동영상 파일은 <b>WMV</b> 형식인데, 웹 브라우저에서는 WMV 형식을 지원하지 않습니다.
+
+        video 태그의 속성은 다음과 같습니다.
+        <br /><br />
+
+        <table id="propertyVideo" border="1">
             <tr>
                 <th border="1">속성 이름</th>
                 <th border="1">설명</th>
             </tr>
             <tr>
-                <td>action</td>
-                <td>입력 데이터의 전달 위치를 지정합니다.</td>
+                <td>src</td>
+                <td>비디오 파일의 경로 지정</td>
             </tr>
             <tr>
-                <td>method</td>
-                <td>입력 데이터의 전달 방식을 선택합니다.</td>
+                <td>poster</td>
+                <td>비디오 준비 중일 때의 이미지 파일 경로 지정</td>
+            </tr>
+            <tr>
+                <td>preload</td>
+                <td>비디오를 재생하기 전에 모두 불러올지 지정</td>
+            </tr>
+            <tr>
+                <td>autoplay</td>
+                <td>비디오를 자동 재생할지 지정</td>
+            </tr>
+            <tr>
+                <td>loop</td>
+                <td>비디오를 반복할지 지정</td>
+            </tr>
+            <tr>
+                <td>controls</td>
+                <td>비디오 재생 도구를 출력할지 지정</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>비디오의 너비 지정</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>비디오의 높이 지정</td>
             </tr>
         </table>
 
-        <br /><br />
-        method 속성에는 <b>get</b> 속성과 <b>post</b> 속성을 지정할 수 있습니다.<br />
-        다음과 같이 사용할 수 있습니다.<br /><br />
+        <br />
+        video 태그도 audio 태그처럼 웹 브라우저마다 지원하는 비디오 형식이 다르므로, source 태그를 사용해야 하는데요.<br />
+        기본적으로 MP4 형식으로 사용하면 됩니다. <br />
+        <br />
+        다음과 같이 사용하면 됩니다.<br />
 
-        <b>GET 요청</b>입니다.<br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form method="get"&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
         <br /><br />
-        <form method="get">
-            <input type="text" name="search" />
-            <input type="submit" />
-        </form>
-        <br /><br />
-
-        <b>POST 요청</b>입니다.<br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form method="post"&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
-        <br /><br />
-        <form method="post">
-            <input type="text" name="search" />
-            <input type="submit" />
-        </form>
-        <br /><br />
-
-        GET 요청에 값을 넣고, 제출하면 url에 확인 값이 붙은 것을 볼 수 있습니다.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;video controls="controls"&gt; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Wildlife.mp4"
+        type="video/mp4" /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Wildlife.webm"
+        type="video/webm" /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/video&gt;<br />
         <br />
         <br />
-        <h4>기본 input 태그</h4>
-        input 태그는 사용자에게 정보를 입력받는 기능을 수행하는 태그입니다.<br />
-        다음은 input 태그를 사용하는 예시입니다.
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="name"/&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" name="password"/&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="file" name="file" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
-        <br /><br />
-        결과는 다음과 같습니다!<br />
-        <form>
-            <input type="text" name="name" /><br />
-            <input type="password" name="password" /><br />
-            <input type="file" name="file" /><br />
-            <input type="submit" />
-        </form>
-        <br /><br />
-        입력 양식의 형태를 지정할 때는 input 태그와 type 속성을 사용할 수 있습니다.<br /><br />
-        다음은 input 태그의 type 속성값 입니다.<br />
-        <br />
-        <table border="1" id="html4_input">
-            <tr>
-                <th colspan="2">속성값</th>
-                <th colspan="2">설명</th>
-            </tr>
-            <tr>
-                <td colspan="2"><b>button</b></td>
-                <td colspan="2">버튼을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>checkobx</b></td>
-                <td colspan="2">체크박스를 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>file</b></td>
-                <td colspan="2">파일 입력 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>hidden</b></td>
-                <td colspan="2">보이지 않습니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>image</b></td>
-                <td colspan="2">이미지 형태를 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>password</b></td>
-                <td colspan="2">비밀번호 입력 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>radio</b></td>
-                <td colspan="2">라디오 버튼을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>reset</b></td>
-                <td colspan="2">초기화 버튼을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>submit</b></td>
-                <td colspan="2">제출 버튼을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td colspan="2"><b>text</b></td>
-                <td colspan="2">글자 입력 양식을 생성합니다.</td>
-            </tr>
-        </table>
-        <br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="button" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="file" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="hidden" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="image" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="reset" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
-        <br /><br />
-
         결과는 다음과 같습니다!
         <br /><br />
-        <form>
-            <input type="text" /><br />
-            <input type="button" /><br />
-            <input type="checkbox" /><br />
-            <input type="file" /><br />
-            <input type="hidden" /><br />
-            <input type="image" /><br />
-            <input type="password" /><br />
-            <input type="radio" /><br />
-            <input type="reset" /><br />
-            <input type="submit" />
-        </form>
+        <video controls="controls">
+            <source src="Wildlife.mp4" type="video/mp4" />
+            <source src="Wildlife.webm" type="video/webm" />
+        </video>
         <br /><br />
+        그리고 위의 <a href="#propertyVideo">video 태그의 속성</a>에서는 <a href="#propertyAudio">audio태그의 속성</a>에는 없던
+        <b>poster</b>속성이
+        있는데, <br />
+        poster 태그는 동영상이 대기 상태일 때 표시할 이미지를 의미합니다.
 
-        <hr />
+        <br /><br />
+        다음과 같이 사용할 수 있습니다.<br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;video poster="hahahaha.jpg"<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="640"
+        height="360" controls="controls"&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source
+        src="Wildlife.mp4" type="video/mp4" /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source
+        src="Wildlife.webm" type="video/webm" /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/video&gt;<br />
+
+        <br /><br />
+        결과는 다음과 같습니다!<br />
         <br />
-        input 태그를 설명하는데 사용할 수 있는 <b>label 태그</b>가 있습니다.<br />
-
-        다음과 같이 사용할 수 있습니다.
+        <video poster="hahahaha.jpg" width="640" height="360" controls="controls">
+            <source src="Wildlife.mp4" type="video/mp4" />
+            <source src="Wildlife.webm" type="video/webm" />
+        </video>
         <br /><br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;이름&lt;/label&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
-        <br /><br />
-        결과는 아래와 같습니다.<br /><br />
-        <form>
-            <label>이름</label>
-            <input type="text" />
-        </form>
-        <br />
-        label태그는 어떤 input 태그를 설명하고 있는지 표시해줘야 합니다.<br />
-        input 태그에 id 속성에 입력한 값을, label 태그에 for 속성을 입력합니다.<br />
-        <br />
+        </p>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="name"&gt;이름&lt;/label&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="name" type="text" /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
-        <br />
-        결과는 아래와 같습니다. <br /><br />
 
-        <form>
-            <label for="name">이름</label>
-            <input id="name" type="text" />
-        </form>
+        <>
+            <h3><b>입력 양식 태그</b></h3>
+            입력양식은 사용자에게 입력받는 공간을 의미합니다.<br />
+            입력 양식 태그는 입력 양식을 만들 때 사용하는 태그입니다. <br /><br />
 
-        <br /><br />
-        <hr /><br />
-        <form>
-            <label>이름</label>
-            <input type="text" />
-        </form>
-        <br />
-        <form>
-            <label for="name2">이름</label>
-            <input id="name2" type="text" />
-        </form>
+            입력 양식은 <b>form태그</b>를 사용해 생성합니다.
 
-        <br /><br />
-        뒤 두개의 동일한 input 태그를 확인해보시면, 위에 form 태그는 빈 칸 자체를 입력해야, 입력이 가능합니다. <br />
-        반면에 밑에 있는 input 태그는 label로 지정한 '이름'을 클릭하더라도, 빈 칸에 입려할 수 있게 되는 것을 확인할 수 있으실 겁니다!<br />
-        <br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt; <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt; <br />
 
-        <a href="#html4_input">방금 살펴본 input 태그의 속성</a>들은 HTML4에서 지원하는 내용입니다.<br />
-        다음은 html 5에서 지원하는 type 속성들입니다.<br />
-        <br />
+            <br /><br />
 
-        <table border="1">
-            <tr>
-                <th>속성값</th>
-                <th>설명</th>
-            </tr>
-            <tr>
-                <td>color</td>
-                <td>일 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>date</td>
-                <td>일 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>datetime</td>
-                <td>날짜 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>datetime-local</td>
-                <td>지역 날짜 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>email</td>
-                <td>이메일 입력 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>month</td>
-                <td>월 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>number</td>
-                <td>숫자 생성 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>range</td>
-                <td>범위 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>search</td>
-                <td>검색어 입력 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>tel</td>
-                <td>전화번호 입력 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>time</td>
-                <td>시간 선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>url</td>
-                <td>URL 주소 입력 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>week</td>
-                <td>주 선택 양식을 생성합니다.</td>
-            </tr>
-        </table>
+            입력 양식 안에는 다음과 같이 input 태그를 입력합니다.<br /><br />
 
-        <br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="color" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="date" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="datetime" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="datetime-local" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="month" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="range" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="time" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="url" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="week" /&gt;&lt;br /&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
-        <br />
-        <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt; <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search"/&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt; <br />
+            <br /><br />
 
-        결과는 다음과 같습니다! <br />
-        <br />
-        <form>
-            <input type="color" /><br />
-            <input type="date" /><br />
-            <input type="datetime" /><br />
-            <input type="datetime-local" /><br />
-            <input type="email" /><br />
-            <input type="month" /><br />
-            <input type="number" /><br />
-            <input type="range" /><br />
-            <input type="search" /><br />
-            <input type="tel" /><br />
-            <input type="time" /><br />
-            <input type="url" /><br />
-            <input type="week" /><br />
-        </form>
+            결과는 아래와 같은 형태로 입력 양식이 생성됩니다.
+            <br />
 
-        <br /><br />
+            <form>
+                <input type="text" name="search" />
+                <input type="submit" />
+            </form>
 
-        <h4>textarea 태그</h4>
-        textarea 태그는 form 태그 내에서 여러줄의 글자를 입력할 때 사용할 수 있습니다.<br />
-        다음과 같이 사용할 수 있습니다.<br />
-        <br /><br />
+            <br /><br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;&lt;/textarea&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
 
-        <br /><br />
-        결과는 다음과 같습니다.
-        <br /><br />
-        <form>
-            <textarea></textarea>
-        </form>
-        <br /><br />
+            <h4>form 태그의 속성</h4>
+            form 태그의 속성은 다음과 같습니다.<br /><br /><br />
 
-        <br />textarea에서 사용하는 속성은 다음과 같습니다.
+            <table border="1">
+                <tr>
+                    <th border="1">속성 이름</th>
+                    <th border="1">설명</th>
+                </tr>
+                <tr>
+                    <td>action</td>
+                    <td>입력 데이터의 전달 위치를 지정합니다.</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>입력 데이터의 전달 방식을 선택합니다.</td>
+                </tr>
+            </table>
 
-        <table border="1">
-            <tr>
-                <th>속성 이름</th>
-                <th>설명</th>
-            </tr>
-            <tr>
-                <td>cols</td>
-                <td>태그의 너비를 지정합니다.</td>
-            </tr>
-            <tr>
-                <td>rows</td>
-                <td>태그의 높이를 지정합니다.</td>
-            </tr>
-        </table>
+            <br /><br />
+            method 속성에는 <b>get</b> 속성과 <b>post</b> 속성을 지정할 수 있습니다.<br />
+            다음과 같이 사용할 수 있습니다.<br /><br />
 
-        textarea 에서는 HTML코드 내에서 text를 입력하실 때, 각을 맞춰서 하면, 원하지 않는 형태로 문자가 표시됩니다.<br />
-        다음과 같이 있을 때,
+            <b>GET 요청</b>입니다.<br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form method="get"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br /><br />
+            <form method="get">
+                <input type="text" name="search" />
+                <input type="submit" />
+            </form>
+            <br /><br />
 
-        <br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Textarea<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Textarea<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/textarea&gt;<br />
-        <br /><br />
-        <br />
-        아래와 같이 표시됩니다.<br />
-        ※혹시 글이 보이지 않으면, 마우스로 늘려보세요!<br />
+            <b>POST 요청</b>입니다.<br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form method="post"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="search" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br /><br />
+            <form method="post">
+                <input type="text" name="search" />
+                <input type="submit" />
+            </form>
+            <br /><br />
 
-        <textarea>
+            GET 요청에 값을 넣고, 제출하면 url에 확인 값이 붙은 것을 볼 수 있습니다.
+            <br />
+            <br />
+            <h4>기본 input 태그</h4>
+            input 태그는 사용자에게 정보를 입력받는 기능을 수행하는 태그입니다.<br />
+            다음은 input 태그를 사용하는 예시입니다.
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" name="name"/&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" name="password"/&gt;&lt;br
+            /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="file" name="file" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br /><br />
+            결과는 다음과 같습니다!<br />
+            <form>
+                <input type="text" name="name" /><br />
+                <input type="password" name="password" /><br />
+                <input type="file" name="file" /><br />
+                <input type="submit" />
+            </form>
+            <br /><br />
+            입력 양식의 형태를 지정할 때는 input 태그와 type 속성을 사용할 수 있습니다.<br /><br />
+            다음은 input 태그의 type 속성값 입니다.<br />
+            <br />
+            <table border="1" id="html4_input">
+                <tr>
+                    <th colspan="2">속성값</th>
+                    <th colspan="2">설명</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>button</b></td>
+                    <td colspan="2">버튼을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>checkobx</b></td>
+                    <td colspan="2">체크박스를 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>file</b></td>
+                    <td colspan="2">파일 입력 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>hidden</b></td>
+                    <td colspan="2">보이지 않습니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>image</b></td>
+                    <td colspan="2">이미지 형태를 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>password</b></td>
+                    <td colspan="2">비밀번호 입력 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>radio</b></td>
+                    <td colspan="2">라디오 버튼을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>reset</b></td>
+                    <td colspan="2">초기화 버튼을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>submit</b></td>
+                    <td colspan="2">제출 버튼을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>text</b></td>
+                    <td colspan="2">글자 입력 양식을 생성합니다.</td>
+                </tr>
+            </table>
+            <br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="button" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="file" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="hidden" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="image" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="reset" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br /><br />
+
+            결과는 다음과 같습니다!
+            <br /><br />
+            <form>
+                <input type="text" /><br />
+                <input type="button" /><br />
+                <input type="checkbox" /><br />
+                <input type="file" /><br />
+                <input type="hidden" /><br />
+                <input type="image" /><br />
+                <input type="password" /><br />
+                <input type="radio" /><br />
+                <input type="reset" /><br />
+                <input type="submit" />
+            </form>
+            <br /><br />
+
+            <hr />
+            <br />
+            input 태그를 설명하는데 사용할 수 있는 <b>label 태그</b>가 있습니다.<br />
+
+            다음과 같이 사용할 수 있습니다.
+            <br /><br />
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;이름&lt;/label&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br /><br />
+            결과는 아래와 같습니다.<br /><br />
+            <form>
+                <label>이름</label>
+                <input type="text" />
+            </form>
+            <br />
+            label태그는 어떤 input 태그를 설명하고 있는지 표시해줘야 합니다.<br />
+            input 태그에 id 속성에 입력한 값을, label 태그에 for 속성을 입력합니다.<br />
+            <br />
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="name"&gt;이름&lt;/label&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="name" type="text" /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br />
+            결과는 아래와 같습니다. <br /><br />
+
+            <form>
+                <label for="name">이름</label>
+                <input id="name" type="text" />
+            </form>
+
+            <br /><br />
+            <hr /><br />
+            <form>
+                <label>이름</label>
+                <input type="text" />
+            </form>
+            <br />
+            <form>
+                <label for="name2">이름</label>
+                <input id="name2" type="text" />
+            </form>
+
+            <br /><br />
+            뒤 두개의 동일한 input 태그를 확인해보시면, 위에 form 태그는 빈 칸 자체를 입력해야, 입력이 가능합니다. <br />
+            반면에 밑에 있는 input 태그는 label로 지정한 '이름'을 클릭하더라도, 빈 칸에 입려할 수 있게 되는 것을 확인할 수 있으실 겁니다!<br />
+            <br /><br />
+
+            <a href="#html4_input">방금 살펴본 input 태그의 속성</a>들은 HTML4에서 지원하는 내용입니다.<br />
+            다음은 html 5에서 지원하는 type 속성들입니다.<br />
+            <br />
+
+            <table border="1">
+                <tr>
+                    <th>속성값</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>일 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>일 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>datetime</td>
+                    <td>날짜 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>datetime-local</td>
+                    <td>지역 날짜 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>이메일 입력 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>month</td>
+                    <td>월 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>숫자 생성 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>range</td>
+                    <td>범위 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>검색어 입력 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>tel</td>
+                    <td>전화번호 입력 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td>시간 선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>URL 주소 입력 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>week</td>
+                    <td>주 선택 양식을 생성합니다.</td>
+                </tr>
+            </table>
+
+            <br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="color" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="date" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="datetime" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="datetime-local" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="month" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="range" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="time" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="url" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="week" /&gt;&lt;br /&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            <br />
+            <br />
+
+            결과는 다음과 같습니다! <br />
+            <br />
+            <form>
+                <input type="color" /><br />
+                <input type="date" /><br />
+                <input type="datetime" /><br />
+                <input type="datetime-local" /><br />
+                <input type="email" /><br />
+                <input type="month" /><br />
+                <input type="number" /><br />
+                <input type="range" /><br />
+                <input type="search" /><br />
+                <input type="tel" /><br />
+                <input type="time" /><br />
+                <input type="url" /><br />
+                <input type="week" /><br />
+            </form>
+
+            <br /><br />
+
+            <h4>textarea 태그</h4>
+            textarea 태그는 form 태그 내에서 여러줄의 글자를 입력할 때 사용할 수 있습니다.<br />
+            다음과 같이 사용할 수 있습니다.<br />
+            <br /><br />
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;&lt;/textarea&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+
+            <br /><br />
+            결과는 다음과 같습니다.
+            <br /><br />
+            <form>
+                <textarea></textarea>
+            </form>
+            <br /><br />
+
+            <br />textarea에서 사용하는 속성은 다음과 같습니다.
+
+            <table border="1">
+                <tr>
+                    <th>속성 이름</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>cols</td>
+                    <td>태그의 너비를 지정합니다.</td>
+                </tr>
+                <tr>
+                    <td>rows</td>
+                    <td>태그의 높이를 지정합니다.</td>
+                </tr>
+            </table>
+
+            textarea 에서는 HTML코드 내에서 text를 입력하실 때, 각을 맞춰서 하면, 원하지 않는 형태로 문자가 표시됩니다.<br />
+            다음과 같이 있을 때,
+
+            <br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Textarea<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Textarea<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/textarea&gt;<br />
+            <br /><br />
+            <br />
+            아래와 같이 표시됩니다.<br />
+            ※혹시 글이 보이지 않으면, 마우스로 늘려보세요!<br />
+
+            <textarea>
             Hello Textarea
             Hello Textarea
         </textarea>
 
-        <br /><br />
-        따라서 다음과 같이 각을 맞춰 코드에 입력하기보단 한 줄에 입력하는 느낌으로 입력하시면 됩니다.<br /><br />
-        이런 식으로요! <br />
-        &lt;textarea&gt;Hello Textarea Hello Textarea&lt;/textarea&gt; <br />
-        결과는 다음과 같습니다. (textarea의 입력창 크기에 따라 결과가 바뀝니다)<br /><br />
+            <br /><br />
+            따라서 다음과 같이 각을 맞춰 코드에 입력하기보단 한 줄에 입력하는 느낌으로 입력하시면 됩니다.<br /><br />
+            이런 식으로요! <br />
+            &lt;textarea&gt;Hello Textarea Hello Textarea&lt;/textarea&gt; <br />
+            결과는 다음과 같습니다. (textarea의 입력창 크기에 따라 결과가 바뀝니다)<br /><br />
 
-        <textarea>Hello Textarea Hello Textarea</textarea>
+            <textarea>Hello Textarea Hello Textarea</textarea>
 
-        <br /><br />
+            <br /><br />
 
-        <h4>select 태그</h4>
-        select 태그는 여러 개의 목록에서 몇 가지를 선택할 수 있는 입력 양ㅇ식 요소입니다.<br />
-        다음은 select 태그와 같이 사용되는 태그입니다.<br />
-        <br /><br />
-        <table border="1">
-            <tr>
-                <th><b>태그 이름</b></th>
-                <th><b>설명</b></th>
-            </tr>
-            <tr>
-                <td>select</td>
-                <td>선택 양식을 생성합니다.</td>
-            </tr>
-            <tr>
-                <td>optgroup</td>
-                <td>옵션을 그룹화합니다.</td>
-            </tr>
-            <tr>
-                <td>option</td>
-                <td>옵션을 생성합니다.</td>
-            </tr>
-        </table>
+            <h4>select 태그</h4>
+            select 태그는 여러 개의 목록에서 몇 가지를 선택할 수 있는 입력 양ㅇ식 요소입니다.<br />
+            다음은 select 태그와 같이 사용되는 태그입니다.<br />
+            <br /><br />
+            <table border="1">
+                <tr>
+                    <th><b>태그 이름</b></th>
+                    <th><b>설명</b></th>
+                </tr>
+                <tr>
+                    <td>select</td>
+                    <td>선택 양식을 생성합니다.</td>
+                </tr>
+                <tr>
+                    <td>optgroup</td>
+                    <td>옵션을 그룹화합니다.</td>
+                </tr>
+                <tr>
+                    <td>option</td>
+                    <td>옵션을 생성합니다.</td>
+                </tr>
+            </table>
 
-        <br /><br /><br />
-        사용 예제는 다음과 같습니다.<br />
-        <br />
+            <br /><br /><br />
+            사용 예제는 다음과 같습니다.<br />
+            <br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;김밥&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;떡볶이&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;오뎅&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;김밥&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;떡볶이&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;오뎅&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
 
-        <br /><br />
-        결과는 다음과 같습니다!
-        <br /><br />
-        <hr />
-        <select>
-            <option>김밥</option>
-            <option>떡볶이</option>
-            <option>오뎅</option>
-        </select>
-        <hr />
+            <br /><br />
+            결과는 다음과 같습니다!
+            <br /><br />
+            <hr />
+            <select>
+                <option>김밥</option>
+                <option>떡볶이</option>
+                <option>오뎅</option>
+            </select>
+            <hr />
 
-        그런데요.. 흠..<br />
-        책에서 분식집에서 이 세개 중 하나만 골라야한다면, 충격과 공포를 느낀다고 하네요...(전 모르겠습니다. 김밥 하나로 충분한 거 같아서요..)<br />
-        그래서 여러 개를 고를 수 있도록 속성을 하나 알려줍니다. 바로 <b>multiple</b>속성을 이용하면 된다고 합니다.
-        <br />
-        다음과 같이 사용할 수 있습니다.<br /><br />
+            그런데요.. 흠..<br />
+            책에서 분식집에서 이 세개 중 하나만 골라야한다면, 충격과 공포를 느낀다고 하네요...(전 모르겠습니다. 김밥 하나로 충분한 거 같아서요..)<br />
+            그래서 여러 개를 고를 수 있도록 속성을 하나 알려줍니다. 바로 <b>multiple</b>속성을 이용하면 된다고 합니다.
+            <br />
+            다음과 같이 사용할 수 있습니다.<br /><br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;select multiple="multiple"&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;김밥&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;떡볶이&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;오뎅&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
-        <br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;select multiple="multiple"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;김밥&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;떡볶이&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;오뎅&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
+            <br /><br />
 
-        결과는 다음과 같습니다.
-        <br /><br />
+            결과는 다음과 같습니다.
+            <br /><br />
 
-        <select multiple="multiple">
-            <option>김밥</option>
-            <option>떡볶이</option>
-            <option>오뎅</option>
-        </select>
+            <select multiple="multiple">
+                <option>김밥</option>
+                <option>떡볶이</option>
+                <option>오뎅</option>
+            </select>
 
-        스마트폰에서 코드를 실행하면 어느정도 이쁘다고 하는데,<br />
-        데스크톱에서는 예쁘게 나오지 않는 정도가 아니라, 병맛이네요..<br />
-        <br>
-        <b>optgroup</b>태그는 선택 옵션을 묶을 때 사용하는 태그입니다.<br />
-        다음 예제와 같이 사용할 수 있습니다.<br /><br /><br />
+            스마트폰에서 코드를 실행하면 어느정도 이쁘다고 하는데,<br />
+            데스크톱에서는 예쁘게 나오지 않는 정도가 아니라, 병맛이네요..<br />
+            <br>
+            <b>optgroup</b>태그는 선택 옵션을 묶을 때 사용하는 태그입니다.<br />
+            다음 예제와 같이 사용할 수 있습니다.<br /><br /><br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="HTML5"&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Multimedia
-        Tag&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Connectivity&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Device
-        Access&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="CSS3"&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Animation&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3D
-        Transform&lt;/option&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="HTML5"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Multimedia
+            Tag&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Connectivity&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Device
+            Access&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;optgroup label="CSS3"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;Animation&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3D
+            Transform&lt;/option&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/optgroup&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
 
-        <br /><br />
-        결과는 다음과 같습니다.
-        <br /><br />
-        <hr />
-        <br />
-        <select>
-            <optgroup label="HTML5">
-                <option>Multimedia Tag</option>
-                <option>Connectivity</option>
-                <option>Device Access</option>
-            </optgroup>
-            <optgroup label="CSS3">
-                <option>Animation</option>
-                <option>3D Transform</option>
-            </optgroup>
-        </select>
-        <br />
-        <hr />
-        <br />
+            <br /><br />
+            결과는 다음과 같습니다.
+            <br /><br />
+            <hr />
+            <br />
+            <select>
+                <optgroup label="HTML5">
+                    <option>Multimedia Tag</option>
+                    <option>Connectivity</option>
+                    <option>Device Access</option>
+                </optgroup>
+                <optgroup label="CSS3">
+                    <option>Animation</option>
+                    <option>3D Transform</option>
+                </optgroup>
+            </select>
+            <br />
+            <hr />
+            <br />
 
-        참고로 최근에는 select 태그를 잘 사용하지 않고, 자바스크립트를 통해서 옵션을 선택할 수 있는 수단을 제공한다고 합니다.
+            참고로 최근에는 select 태그를 잘 사용하지 않고, 자바스크립트를 통해서 옵션을 선택할 수 있는 수단을 제공한다고 합니다.
 
-        <br /><br />
+            <br /><br />
 
-        <h4>fieldset 태그와 legend 태그</h4>
-        fieldset, legend 이 두개의 태그는 입력양식을 설명하는 태그입니다.<br />
-        legend 태그는 fieldset 태그 내부에서만 사용할 수 있습니다.<br />
-        다른 곳에서도 사용할 수 있지만, 아무 효과가 없습니다.<br />
-        <br /><br />
-        사용 예제는 다음과 같습니다.<br />
-        <br />
+            <h4>fieldset 태그와 legend 태그</h4>
+            fieldset, legend 이 두개의 태그는 입력양식을 설명하는 태그입니다.<br />
+            legend 태그는 fieldset 태그 내부에서만 사용할 수 있습니다.<br />
+            다른 곳에서도 사용할 수 있지만, 아무 효과가 없습니다.<br />
+            <br /><br />
+            사용 예제는 다음과 같습니다.<br />
+            <br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;입력 양식&lt;/legend&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;label
-        for="name"&gt;이름&lt;/label&gt;&lt;/td&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;input
-        id="name" type="text" /&gt;&lt;/td&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;label
-        for="mail"&gt;이메일&lt;/label&gt;&lt;/td&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;input
-        id="mail"type="text" /&gt;&lt;/td&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit"&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;<br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;입력
+            양식&lt;/legend&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;label
+            for="name"&gt;이름&lt;/label&gt;&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;input
+            id="name" type="text" /&gt;&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;label
+            for="mail"&gt;이메일&lt;/label&gt;&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;input
+            id="mail"type="text" /&gt;&lt;/td&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br />
 
-        <br />
-        <br />
-        결과는 다음과 같습니다!
-        <br /><br />
-        <form>
-            <fieldset>
-                <legend>입력 양식</legend>
-                <table>
-                    <tr>
-                        <td><label for="name">이름</label></td>
-                        <td><input id="name" type="text" /></td>
-                    </tr>
-                    <tr>
-                        <td><label for="mail">이메일</label></td>
-                        <td><input id="mail" type="text" /></td>
-                    </tr>
-                </table>
-                <input type="submit">
-            </fieldset>
-        </form>
-        <br /><br />
+            <br />
+            <br />
+            결과는 다음과 같습니다!
+            <br /><br />
+            <form>
+                <fieldset>
+                    <legend>입력 양식</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">이름</label></td>
+                            <td><input id="name" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">이메일</label></td>
+                            <td><input id="mail" type="text" /></td>
+                        </tr>
+                    </table>
+                    <input type="submit">
+                </fieldset>
+            </form>
+            <br /><br />
+
+            <p>
+            <h3>공간 분할 태그</h3>
+            공간 분할 태그에서 가장 많이 사용하는 태그는 div태그입니다.<br />
+            <br /><br />
+            <table border="1">
+                <tr>
+                    <th>태그 이름</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td><b>div</b></td>
+                    <td>block 형식으로 공간을 분할합니다.</td>
+                </tr>
+                <tr>
+                    <td><b>span</b></td>
+                    <td>inline 형식으로 공간을 분할합니다.</td>
+                </tr>
+            </table>
+
+            <br /><br />
+            <br />
+
+            다음은 div 태그 사용예제입니다.
+
+            <br /><br />
+
+            <hr />
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Lorem ipsum&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Lorem ipsum&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Lorem ipsum&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Lorem ipsum&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Lorem ipsum&lt;/div&gt;<br />
+
+            <hr />
+            <br /><br />
+
+            결과는 다음과 같습니다.
+            <br /><br />
+
+            <div>Lorem ipsum</div>
+            <div>Lorem ipsum</div>
+            <div>Lorem ipsum</div>
+            <div>Lorem ipsum</div>
+            <div>Lorem ipsum</div>
+
+            <br /><br />
+
+            div는 block 형식으로 공간을 분할합니다.<br />
+            block형식이란 차곡차곡 쌓아 올려지는 형식을 의미합니다.<br />
+            <br />
+            <img src="https://velog.velcdn.com/images/tjdtn4484/post/4a069987-3b13-4a4f-8730-2c7eddd73d3b/image.png">
+
+            <br />
+            이런 식으로 글자가 웹페이지의 너비만큼(block형태) 차지하면서 쌓아 올려집니다.
 
 
+            <h4><b>span태그</b></h4>
+            span태그는 <b>inline 형식</b>으로 공간을 분할합니다.<br />
+            다음은 사용 예시입니다.<br />
+            <br />
+            <hr />
 
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Lorem ipsum&lt;/span&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Lorem ipsum&lt;/span&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Lorem ipsum&lt;/span&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Lorem ipsum&lt;/span&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Lorem ipsum&lt;/span&gt;<br />
 
+            <hr />
+            <br /><br /><br />
 
+            다음은 결과입니다.<br /><br />
 
+            <span>Lorem ipsum</span>
+            <span>Lorem ipsum</span>
+            <span>Lorem ipsum</span>
+            <span>Lorem ipsum</span>
+            <span>Lorem ipsum</span>
 
+            <br />
+            <hr />
 
-        </p>
+            <br /><br />
 
-        <br /><br /><br /><br /><br />
+            <img src="https://velog.velcdn.com/images/tjdtn4484/post/0c199d34-0b2f-4f1e-b2ff-020f82149e82/image.png" />
 
-        <h4 id="under">이동된 곳</h4>
-        <br>
-        이동된 곳의 h4 태그는 다음과 같습니다. <br />
-        &lt;h4 id="under"&gt;이동된 곳&lt;/h4&gt; <br />
-        이렇게 id를 주면 됩니다. 반면에 다시 온 곳으로 이동해보겠습니다.<br />
-        a 태그의 href의 속성에 "#id"를 주면됩니다.<br />
-        이렇게 명시하면, 다시 온 곳으로 되돌아 갈 수 있습니다.<br />
+            <br />
+            위의 이미지와 같이 line 안에 태그가 표시됩니다.
+            <br /><br />
+            태그 들을 block 형식, inline 형식으로 나눠보면 다음과 같습니다.<br />
+            <br />
+            <br />
+            <hr /><br />
 
-        밑의 '다시 위로 가기' 링크는 다음과 같습니다. (참고로 태그가 표시되도록 했습니다.) <br />
-        &lt;a href="#up"&gt;다시 위로 가기&lt;/a&gt; <br />
-        <a href="#up">다시 위로 가봅시다.</a>
-        </p>
+            <table border="1">
+                <tr>
+                    <th><b>block 형식 태그</b></th>
+                    <th><b>inline 형식 태그</b></th>
+                </tr>
+                <tr>
+                    <td>div태그</td>
+                    <td>span태그</td>
+                </tr>
+                <tr>
+                    <td>h1 ~ h6 태그</td>
+                    <td>a 태그</td>
+                </tr>
+                <tr>
+                    <td>p 태그</td>
+                    <td>input 태그</td>
+                </tr>
+                <tr>
+                    <td>목록 태그</td>
+                    <td>글자 형식 태그</td>
+                </tr>
+                <tr>
+                    <td>테이블 태그</td>
+                </tr>
+                <tr>
+                    <td>form 태그</td>
+                </tr>
+            </table>
 
-        <p>이미지 붙여보기</p>
-        <img src="https://velog.velcdn.com/images/tjdtn4484/post/db66fbe2-c486-41ce-8723-b2d16a9cb096/image.png" />
+            <br />
+            <hr />
 
+            </p>
 
-        </body>
+            <p>
+            <h3><b>HTML 시멘틱 구조 태그</b></h3>
+
+            시멘틱 구조 태그는 HTML 5부터 나온 태그들입니다.<br />
+            <br />
+            시멘틱 구조 태그에는 다음과 같은 태그들이 있습니다.<br />
+            <br />
+            <hr /><br />
+            <table border="1">
+                <tr border="1">
+                    <th><b>태그 이름</b></th>
+                    <th><b>설명</b></th>
+                </tr>
+                <tr>
+                    <td>Header</td>
+                    <td>헤더를 의미</td>
+                </tr>
+                <tr>
+                    <td>nav</td>
+                    <td>내비게이션을 의미</td>
+                </tr>
+                <tr>
+                    <td>aside</td>
+                    <td>사이드에 위치하는 공간을 의미</td>
+                </tr>
+                <tr>
+                    <td>section</td>
+                    <td>여러 중심 내용을 감싸는 공간을 의미</td>
+                </tr>
+                <tr>
+                    <td>article</td>
+                    <td>글자가 많이 들어가는 부분을 의미</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td>푸터를 의미</td>
+                </tr>
+                </p>
+
+                <hr />
+                <h4>이상 끝입니다.</h4>
+                마지막으로 해볼만한 문제가 있어서, html로 한번 작성해보고, 결과를 출력하며 포스팅을 마칩니다.
+                <br />
+                <br />
+                <hr />
+                <br />
+
+                이름: <input /> <br />
+                성별:
+                <input type="radio" />남성
+                <input type="radio" />여성
+                <br />
+                취미:
+                <input type="checkbox" />운동
+                <input type="checkbox" />음악
+                <input type="checkbox" />개발
+                <br />
+                <input type="submit" />
+
+                <br /><br />
+                <hr /><br />
+
+                <p>
+                <h4 id="under">이동된 곳</h4>
+                이동된 곳의 h4 태그는 다음과 같습니다. <br />
+                &lt;h4 id="under"&gt;이동된 곳&lt;/h4&gt; <br />
+                이렇게 id를 주면 됩니다. 반면에 다시 온 곳으로 이동해보겠습니다.<br />
+                a 태그의 href의 속성에 "#id"를 주면됩니다.<br />
+                이렇게 명시하면, 다시 온 곳으로 되돌아 갈 수 있습니다.<br />
+
+                밑의 '다시 위로 가기' 링크는 다음과 같습니다. (참고로 태그가 표시되도록 했습니다.) <br />
+                &lt;a href="#up"&gt;다시 위로 가기&lt;/a&gt; <br />
+                <a href="#up">다시 위로 가봅시다.</a>
+                </p>
+
+                <p>이미지 붙여보기</p>
+                <img
+                    src="https://velog.velcdn.com/images/tjdtn4484/post/db66fbe2-c486-41ce-8723-b2d16a9cb096/image.png" />
+</body>
 
 </html>
