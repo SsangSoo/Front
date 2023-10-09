@@ -52,6 +52,44 @@
         li:not(.target) {
             font-size: 30px;
         }
+
+        /* 가상 요소 */
+        .required::before {
+            content: '*';
+            margin-right: 2px;
+            color: red;
+            font-size: 18px;
+        }
+
+        [data-tooltip] {
+            position: relative;
+        }
+
+        [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 0px;
+            left: 56px;
+            background-color: black;
+            color: white;
+            width: 230px;
+        }
+
+        .letter::first-letter {
+            font-size: 60px;
+            color: blueviolet;
+        }
+
+        .line::first-line {
+            background-color: yellow;
+            color: blueviolet;
+            font-size: 20px;
+        }
+
+        p::selection {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 
@@ -66,14 +104,14 @@
     <fieldset>
         <legend>focus, before, after</legend>
         <div class="field">
-            <label for="name">이름</label>
+            <label class="required" for="name">이름</label>
             <input type="text" id="name" />
         </div>
         <div class="field">
-            <label for="age">나이</label>
+            <label class="required" for="age">나이</label>
             <input type="text" id="age" />
         </div>
-        <button>보내기</button>
+        <button data-tooltip="이 버튼을 클릭하여 정보를 보내세요!">보내기</button>
     </fieldset>
     <fieldset>
         <legend>nth-child, not</legend>
@@ -84,6 +122,20 @@
             <li>4content</li>
             <li>5content</li>
         </ul>
+    </fieldset>
+    <fieldset>
+        <legend>first-letter, first-line, section</legend>
+        <div>
+            <p class="letter">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit facere laudantium officia labore
+                cupiditate totam laborum reprehenderit nihil quod porro quas ipsam voluptates quidem, iste perferendis
+                deleniti veritatis iure cum!
+            </p>
+            <p class="line">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi quam molestias incidunt obcaecati,
+                totam nulla expedita quos eligendi ea architecto quisquam fuga asperiores at hic quas ex sint similique?
+            </p>
+        </div>
     </fieldset>
 </body>
 
