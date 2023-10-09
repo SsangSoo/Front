@@ -38,6 +38,31 @@
         .attatchment {
             background: url(../assets/images/floral.jpg) no-repeat top right fixed;
         }
+
+        .background-size {
+            width: 300px;
+            height: 300px;
+            background-image: url(../assets/images/flower.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid black;
+        }
+
+        .linear-gradient {
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            /* background: linear-gradient(to top right, rgb(104, 32, 41), rgb(46, 144, 116)); */
+            background: linear-gradient(to right, rgb(104, 32, 41) 30%, rgb(46, 144, 116) 80%, yellow 100%);
+        }
+
+        .radial-gradient {
+            width: 500px;
+            height: 200px;
+            border: 1px solid blue;
+            background: radial-gradient(circle at 10% 50%, white, yellow, red, blue);
+        }
     </style>
 </head>
 
@@ -138,6 +163,12 @@
         Atque error quas dolore, odio harum similique magnam? Doloremque accusamus quaerat ea beatae facere quia? Rerum
         eius modi corrupti sed autem nulla, asperiores maxime, alias ipsa cupiditate libero, omnis qui?
     </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
     <div style="height: 1000px; width: 10px; background-color: red"></div>
 </body>
 
