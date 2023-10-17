@@ -30,7 +30,7 @@ console.log('itemAll[1]', itemAll[1]);
 console.log('itemAll[2]', itemAll[2]);
 
 // h2.textContent = '운동!!!';
-// h2.textContent = '<span>운동!!!</span>'; // 스팬태그 그대로 표현됨
+// h2.textContent = '<span>운동!!!</span>'; // span태그 그대로 표현됨
 // console.log(h2.textContent);
 
 // h2.innerHTML = '<span>운동!!!</span>';
