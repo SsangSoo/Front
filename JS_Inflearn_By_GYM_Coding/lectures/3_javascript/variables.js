@@ -16,4 +16,4 @@ console.log(username);
 // 상수엔 값을 재할당 못함.
 // username = 'change';
 
-// 6분 10초~
+
