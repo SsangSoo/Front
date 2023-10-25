@@ -132,8 +132,31 @@
 // }
 // Rest Prameters는 무한히 확장 가능한 매개변수를 "배열로 받을 수 있는 것"이다.
 
-let source = ['사과', '바나나', '딸기'];
-let target = source;
-target[0] = '파인ㄴㄴㄴㄴㄴㄴㄴㄴㄴ'
-console.log('source : ', source);
-console.log('target: ', target);
+// 얕은 복사(Shallow copy)
+// let source = ['사과', '바나나', '딸기'];
+// let target = source;
+// target[0] = '파인애플';                // target의 0번 인덱스만 바꿨음에도 불구하고,
+// console.log('source : ', source);   // source에도 0번 인덱스 요소가 파인애플로 변경되어있다.
+// console.log('target: ', target);    // 얕은 복사가 일어났는데, 이는 target에 값들을 넘긴 것이 아니라, source의 주소값을 넘겼기 때문이다.
+
+// 깊은 복사(Deep copy)
+// 1. 전개 구문을 활용
+// let source = ['사과', '바나나', '딸기'];
+// let target = [...source];
+// target[0] = '파인애플';
+// console.log('source : ', source);
+// console.log('target: ', target);  // target에만 파인애플로 변경됨.
+
+// 2. Array의 from 메서드로도 깊은 복사 가능
+// let source = ['사과', '바나나', '딸기'];
+// let target = Array.from(source);
+// target[0] = '파인애플';
+// console.log('source : ', source);
+// console.log('target: ', target);  // target에만 파인애플로 변경됨.
+
+// 3. slice 메서드 활용
+// let source = ['사과', '바나나', '딸기'];
+// let target = source.slice();
+// target[0] = '파인애플';
+// console.log('source : ', source);
+// console.log('target: ', target);  // target에만 파인애플로 변경됨.
