@@ -140,6 +140,7 @@
 // console.log('target: ', target);    // 얕은 복사가 일어났는데, 이는 target에 값들을 넘긴 것이 아니라, source의 주소값을 넘겼기 때문이다.
 
 // 깊은 복사(Deep copy)
+///////////// 깊은 복사는 새로운 참조값에 배열이 복사됨.
 // 1. 전개 구문을 활용
 // let source = ['사과', '바나나', '딸기'];
 // let target = [...source];
