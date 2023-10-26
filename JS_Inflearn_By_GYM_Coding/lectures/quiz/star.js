@@ -124,3 +124,27 @@ for(let i = 0; i < 5; i++) {
     text = text + '\n';
 }
 console.log(text);
+
+
+// 다이아몬드
+//         *
+//        ***
+//       *****
+//      *******
+//     *********
+//      *******
+//       *****
+//        ***
+//         *
+text = '';
+for(let i = 0; i < 9; i++) {
+    for(let j = 0; j < 9; j++) {
+        if(i <= j && j < 9-i) {
+            text = text + '*';
+        } else {
+            text = text + ' ';
+        }
+    }
+    text = text + '\n';
+}
+console.log(text);
