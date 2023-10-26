@@ -87,3 +87,40 @@ for(let i = 0; i < 5; i++) {
 console.log(text);
 
 
+// 정삼감형
+//      *
+//     ***
+//    *****
+//   *******
+//  *********
+text = '';
+for(let i = 0; i < 5; i++) {
+    for(let j = 0; j < 9; j++) {
+        if(4-i <= j && j <= 4+i) {
+            text = text + '*';
+        } else {
+            text = text + ' ';
+        }
+    }
+    text = text + '\n';
+}
+console.log(text);
+
+// 정삼각형-reserve
+//  *********
+//   *******
+//    *****
+//     ***
+//      *
+text = '';
+for(let i = 0; i < 5; i++) {
+    for(let j = 0; j < 9; j++) {
+        if(i <= j && j < 9-i) {
+            text = text + '*';
+        } else {
+            text = text + ' ';
+        }
+    }
+    text = text + '\n';
+}
+console.log(text);
