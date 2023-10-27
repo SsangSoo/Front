@@ -139,7 +139,7 @@ console.log(text);
 text = '';
 for(let i = 0; i < 9; i++) {
     for(let j = 0; j < 9; j++) {
-        if(i <= j && j < 9-i) {
+        if((i <= 4 && (4-i) <= j && j <= (4+i)) || (i > 4 && (i-4) <= j && j < (9-(i-4)))) {
             text = text + '*';
         } else {
             text = text + ' ';
