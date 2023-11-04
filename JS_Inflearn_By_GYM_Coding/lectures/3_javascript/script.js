@@ -56,3 +56,14 @@
 // document.addEventListener('DOMContentLoaded', function () {
 //     alert('DOMContentLoaded');
 // });
+
+// let btn = document.querySelector('#btn');
+//     btn.addEventListener('click', function () {
+//         alert('Hello World'); // 에러 발생
+// });
+
+// async
+// HTML 파싱과 함께 비동기적으로 JS파일을 불러온다.
+// HTML 파싱이 완료되지 않았더라도, 먼저 로딩되는 JavaScript 파일부터 실행이 시작된다.
+// JavaScript 파일을 실행할 때는 HTML파싱이 중단된다. // defer는 파싱을 한 후에 JS 파일이 실행된다.
+// 그래서 순서에 따라서 원활하지 않기 때문에, Async는 정말 필요한 순간에 사용하고, 평소에는 Defer을 사용한다!

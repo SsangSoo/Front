@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--  <script src="script.js" ></script>-->
-  <script src="script.js" ></script>
+<!-- defer 속성을 통해 비동기로 script 파일을 불러온다.
+이로 인해서 따라서 파싱순서에 의해서 비효율적이던 JS 파일 불러오기가 해결되었다.  -->
+<!-- defer은 HTML 파싱이 완료된 후, JavaScript 코드를 실행한다. -->
+<!-- 원래 HTML을 파싱하면서 스크립트 태그를 만나면 원래 멈추고, 스크립트 파일을 가져온 후, HTML을 파싱을 다시하는 동기식으로 처리되었지만,
+     defer 속성을 통해서 스크립트 태그를 만나더라도 파싱은 파싱대로, 스크립트 태그는 스크립트 태그를 가져오는 데로 비동기식으로 처리된다.
+     그리고 스크립트파일의 실행은 HTML 파싱 후 스크립트가 실행된다.-->
+  <script src="script.js" defer></script> <!-- defer을 사용하면 원래 뜨던 오류가 발생하지 않는다. -->
   <title>JavaScript</title>
 </head>
 <body>
