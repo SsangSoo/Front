@@ -107,7 +107,7 @@
 //     name: '김성수',
 //     age: 26,
 //     hello : function () {
-//         function printHello() {
+//         function printHello() {  // 익명함수
 //             console.log(this);
 //             console.log(this.name);
 //             console.log(this.age);
@@ -155,14 +155,14 @@
 // 화살표 함수를 사용하면 안 되는 경우
  // 객체를 선언할 때 메서드도 선언하는데, 이 때 화살표함수를 사용하면, 예상과 다르다.
 
-let person = {
-    name: '김성수',
-    // printThis: function() { // function으로 선언하면, person을 가리키고,
-    printThis: () => {   // 화살표함수로 선언하면, window를 가리킨다.
-        console.log(this);  // window 객체 출력
-    }
-}
-person.printThis();
+// let person = {
+//     name: '김성수',
+//     // printThis: function() { // function으로 선언하면, person을 가리키고,
+//     printThis: () => {   // 화살표함수로 선언하면, window를 가리킨다.
+//         console.log(this);  // window 객체 출력
+//     }
+// }
+// person.printThis();
 
  // addEventListener로 화살표 함수를 선언하면, 이 때도 window함수를 카리킨다.
 // 따라서 화살표 함수를 지양해야한다.
