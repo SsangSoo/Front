@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /*height: 100%;*/ /* html 높이 자체가 작기 떄문에, 계속 반복적으로 보임. */
+    height: 100vh; /* vh를 붙이면, view-port 에 대한 값이므로 화면에 꽉참. */
+    padding: 10px; /* body 영역에 대한 padding */
+    background: linear-gradient(to bottom, #ffc8c9 0%, #ff6d70 100%);
+}
+
+.card {
+    background-color: white;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    /* box shadow best를 검색 후, 들어가서 클릭하면 복사됨 그리고 아래처럼 붙이면 됨.*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card .card__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card .input-field {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+
+.input-field input {
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.input-field input:focus {
+    border-color: #ff6d70;
+}
+
+.input-field button {
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background-color: #ff7a7c;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.5;
+    pointer-events: none; /* none으로 되어있는 것을 주석으로 하면 이벤트가 발생됨. // 원래 글자가 있는 것만 버튼 이벤트 동작하도록 하려고 함 */
+    transition: all 0.3s ease;
+}
+
+.input-field button:hover,
+.card__footer button:hover  {
+    background: #ff0004;
+}
+
+.input-field button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.card .todo-list {
+    max-height: 250px;
+    overflow: auto;
+}
+
+.todo-list li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.todo-list li .icon {
+    position: absolute;
+    right: -45px;
+    top: 50px;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todo-list li:hover .icon {
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todo-list li:hover .icon {
+    right: 0px;
+}
+
+.card .card__footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__footer button {
+    padding: 6px 3px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #ff6d70;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.card__footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}

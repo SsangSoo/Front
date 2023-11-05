@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>  <!-- 현업에선 회사 스타일에 맞게 커스텀한다.-->
+<!--    <link rel="stylesheet" href="normalize.css"/>-->
+<!--    <link rel="stylesheet" href="normalize.css"/>-->
+    <script src="main.js" defer></script> <!-- 스크립트 파일 중복 선언시 1번째 행부터 에러난다고 표시남 -->
+    <script src="https://kit.fontawesome.com/7d3a190b73.js" crossorigin="anonymous"></script>
+    <title>TODO APP</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card__title">Todo App</div>
+        <div class="card__content">
+            <div class="input-field">
+                <input id="input-box" type="text" placeholder="Task를 입력해주세요" />
+                <button id='add-btn'><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+            </div>
+            <ul class="todo-list" id="todo-list">
+            </ul>
+        </div>
+        <div class="card__footer">
+            <span><span id="todo-count"></span> tasks</span>
+            <button id="clear-all">전체 삭제</button>
+        </div>
+    </div>
+</body>
+</html>
