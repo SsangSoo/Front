@@ -1,7 +1,15 @@
 {
   "name": "learn-npm",
   "version": "1.0.0",
+  "description": "자바스크립트로 애플리케이션을 개발할 때 다양한 모듈이 필요한데, 그 필요한 모듈을 쉽게 다운받을 수 있도록 해주는 도구이다.\r 자바스크립트 개발자들은 자주 쓰는 코드들을 모듈로 모아놨는데, 그 모아놓은 모듈을 쉽게 다운받을 수 있도록 도와주는 도구이다",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "dayjs": "^1.11.10"
+    "dayjs": "^1.10.7"
   }
 }
