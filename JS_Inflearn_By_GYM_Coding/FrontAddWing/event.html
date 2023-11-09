@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Phase</title>
+</head>
+<body>
+    body 영역
+    <main>
+        main 영역
+        <div>
+            div 영역
+            <p>
+                p 영역
+                <span>span 영역</span>
+            </p>
+        </div>
+        <a href='http://www.naver.com' target="_blank">네이버 이동</a>
+    </main>
+    <script>
+        const $a = document.querySelector('a');
+        $a.addEventListener('click', function (event) {
+            event.preventDefault(); // 기본 동작을 실행하지 않도록 함.
+        })
+        const $body = document.querySelector('body');
+        const $main = document.querySelector('main');
+        const $div = document.querySelector('div');
+        const $p = document.querySelector('p');
+        const $span = document.querySelector('span');
+
+        // capturing >> 최상위 요소로부터 타겟까지의 이벤트 전파
+        $span.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] capturing span 태그')
+        }, true) // true를 주면, 캡처링 OK , 기본 false : 버블링
+        $p.addEventListener('click', function (event) {
+            event.stopPropagation(); // 캡쳐링 및 버블링 중지
+            console.log('[' + event.eventPhase + '] capturing p 태그')
+        }, true)
+        $div.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] capturing div 태그')
+        }, true)
+        $main.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] capturing main 태그')
+        }, true)
+        $body.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] capturing body 태그')
+        }, true)
+        // bubbling >> 타겟으로부터 다시 최상위까지의 이벤트 전파
+        $span.addEventListener('click', function (event) {
+            event.stopPropagation(); // 캡쳐링 및 버블링 중지
+            console.log('[' + event.eventPhase + '] bubbling span 태그')
+        })
+        $p.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] bubbling p 태그')
+        })
+        $div.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] bubbling div 태그')
+        })
+        $main.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] bubbling main 태그')
+        })
+        $body.addEventListener('click', function () {
+            console.log('[' + event.eventPhase + '] bubbling body 태그')
+        })
+    </script>
+</body>
+</html>
