@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            height: 64px;
+            border-bottom: 1px solid #f8f8f8;
+            background-color: yellow;
+            padding: 16px;
+        }
+        nav {
+            background-color: #bbb;
+            float: left;
+            padding: 16px;
+            width: 160px;
+            height: calc(100vh - 64px);
+        }
+        main {
+            float: left;
+            padding: 16px;
+            width: calc(100vw - 160px);
+            height: calc(100vh - 64px);
+        }
+        .book {
+            text-align: center;
+            border: 1px solid red;
+            display: inline-block;
+            padding: 32px;
+            border-radius: 6px;
+            margin: 8px;
+        }
+        .book__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .book_subtitle {
+            font-size: 16px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div id="appp"></div>
+    <appp></appp>
+    <script type="module" src="./src/maain.js"></script>
+</body>
+</html>

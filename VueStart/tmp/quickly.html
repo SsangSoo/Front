@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 바인딩 개요 -->
+        <input type="text" v-bind:placeholder="message"></input>
+        <hr>
+        <!-- 이벤트 핸들링 -->
+        <button v-on:click="reverseMessage">click</button>
+        <hr>
+        {{ username }}
+<!--    단방향 바인딩    <input type="text" v-bind:value="username" />-->
+<!-- 양방향 바인딩 --> <input type="text" v-model="username" />
+        <hr>
+        <p v-if="visible">보이나요?</p> <!-- 조건문 -->
+        <button type="button" v-on:click="visible = true">visible</button>
+        <ul>
+            <li v-for="item in items">{{item}}</li>
+        </ul>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+
+                    message: "값을 입력해주세요!",
+                    username: "쌩수",
+                    visible: false,
+                    items: ['사과', '포도', '딸기']
+                };
+            },
+            methods: {
+                hello() {
+                    alert('Hello~!');
+                },
+                reverseMessage() {
+                    this.message = this.message.split("").reverse().join("");
+                },
+            },
+        });
+        app.mount('#app');
+    </script>
+</body>
+</html>
