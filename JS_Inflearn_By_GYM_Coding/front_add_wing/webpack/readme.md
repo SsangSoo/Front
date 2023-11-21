@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 ### 번들링
 파일들을 하나로 묶는 작업
@@ -119,3 +120,69 @@ npm run build
 
 ## 삽질 
 - 언더바를 대쉬로 써놓고, 못 발견해서 시간 날림 .. 졸린 상태로 듣다가..;;ㅋ
+=======
+# Webpack
+**여러 개의 파일을 하나**로 묶어주는 **모듈 번들러**
+
+## 번들링
+여러 개의 모듈을 하나로 묶는 과정
+
+## 모듈 번들러
+번들링을 도와주는 도구
+
+
+```
+
+// a.js
+var number = 10;
+export default number;
+
+```
+
+```
+
+// b.js
+var number = 10;
+export default number;
+
+```
+
+```
+
+// c.js
+var number = 10;
+export default number;
+
+```
+
+위와 같이 a, b, c js 파일이 있다고 했을 때
+아래와 같이 사용할 수 있다.
+
+```
+  <script type="module">
+    import a_number from './a.js';
+    import b_number from './b.js';
+    import c_number from './c.js';
+    console.log('a_number : ', a_number);
+    console.log('b_number : ', b_number);
+    console.log('c_number : ', c_number);
+  </script>
+```
+
+그런데 네트워크 탭에서 보면 3개의 모듈을 요청했기 때문에 3개의 모듈이 있다.
+
+<div align="left">
+    <img src="https://velog.velcdn.com/images/tjdtn4484/post/1f41b8b1-7c28-4e89-8956-1b3a218ebff5/image.png"/>
+</div>
+
+그런데 모듈이 많으면 많아질 수록 그만큼 네트워크 비용이 발생한다.
+<br> 이는 속도의 저하를 일으킬 수 있다.
+
+모듈을 추가해서 다른 모듈로부터 불러오더라도 모듈의 수가 증가한다.
+
+<div align="left">
+    <img src="https://velog.velcdn.com/images/tjdtn4484/post/3c1872bb-5dfa-4653-bf9f-134f9195b30a/image.png"/>
+</div>
+
+크롬-검사 탭의 파일을 클릭해서 'Timing'을 보면 Explanation 탭에서 해당 파일을 가져오는 총 시간을 확인할 수 있다.
+>>>>>>> a4356e3 (ok)

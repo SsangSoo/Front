@@ -15,7 +15,7 @@
 // const sayHello = function () {
 //     console.log('이름과 나이를 출력해주세요!');
 //     console.log('이름: 홍길동, 나이: 25살!');
-// };
+// };gi
 
 
 

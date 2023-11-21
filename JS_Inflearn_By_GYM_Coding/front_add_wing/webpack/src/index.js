@@ -1,6 +1,7 @@
 import a_number from './a.js';
 import b_number from './b.js';
 import c_number from './c.js';
+<<<<<<< HEAD
 console.log("a_number : ", a_number);
 console.log("b_number : ", b_number);
 console.log("c_number : ", c_number);
@@ -22,3 +23,8 @@ $buttonB.addEventListener('click', function () {
 $buttonC.addEventListener('click', function () {
     $display.textContent = c_number;
 });
+=======
+console.log('a_number : ', a_number);
+console.log('b_number : ', b_number);
+console.log('c_number : ', c_number);
+>>>>>>> a4356e3 (ok)
