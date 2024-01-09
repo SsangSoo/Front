@@ -31,7 +31,23 @@ console.log("10 / 0 => ", 10 / 0);
 console.log("10 / -0 => ", 10 / -0);
 console.log("1 * 'String' => ", 1 * 'String'); // NaN > 대소문자 구분하므로, NAN , Nan, nan은 안 된다.
 
-let x = nan;    //ReferenceError: nan is not defined
-console.log(x);
+// let x = nan;    // ReferenceError: nan is not defined >>
+// console.log(x);
 
+// 문자열 타입
 
+let string;
+string = '문자열';
+string = "문자열";
+string = `문자열`;
+
+string = '작은따옴표로 감싼 문자열 내의 "큰따옴표"는 문자열로 인식된다.';
+console.log(string);
+
+string = "큰따옴표로 감싼 문자열 내의 '작은따옴표'는 문자열로 인식된다.";
+console.log(string);
+
+// 자바 스크립트의 문자열은 원시타입
+    // C는 문자열을 문자 배열로 다룸.
+    // Java는 문자열을 객체로 표현한다.
+    // 변경 불가능하다 => 한 번 생성된 문자열은 변하지 않는다. 수정해야한다면, 새로 생성해야한다.
